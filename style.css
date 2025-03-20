@@ -1,0 +1,80 @@
+/* Website Background and Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Game Container */
+.box {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    max-width: 600px;
+    width: 90%;
+}
+
+/* Game Buttons */
+button {
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin: 15px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff5722;
+    transform: scale(1.1);
+}
+
+/* Replay Button */
+#replay-btn {
+    display: none;           /* Initially hidden */
+    background: #4caf50;      /* Green color */
+    color: white;
+    padding: 12px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+#replay-btn:hover {
+    background: #45a049;
+    transform: scale(1.1);
+}
+
+/* Results Section */
+#result h2 {
+    font-size: 28px;
+}
+
+#result p {
+    font-size: 20px;
+    margin: 10px 0;
+    animation: fadeIn 0.5s ease;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
